@@ -532,7 +532,7 @@ namespace DSP_Seed_Viewer
                 int currSeedc = currSeed;
                 threads[a % threadsPerBatch] = new Thread(() => {
 
-                    seedWork(currSeedc, cmd, starCount, lockObject1, lockObject1); 
+                    seedWork(currSeedc, cmd, starCount, lockObject1, lockObject2); 
                 }
                 );
                 threads[a % threadsPerBatch].Start();
